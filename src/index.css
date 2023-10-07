@@ -14,7 +14,7 @@
   --radius-sm: 0.25rem;
   --radius-s: 0.5rem;
   --def-border: 1px solid var(--dp_4);
-  --spacing: 1.5rem;
+  --spacing: 24px;
   --std-height: 48px
 }
 
@@ -25,12 +25,31 @@ body {
 }
 
 #app {
-  padding: calc(var(--spacing)/2) 0 0 calc(88px + var(--spacing));
+  padding: 35px 0 0 88px;
   min-height: 100vh;
   position: relative;
   color: #e1e3e3;
+  overflow: hidden;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 35px);
+  padding: var(--spacing);
+  gap: var(--spacing);
+}
+
+#product-wrapper {
+  height: 100%;
 }
 
 ul {
   list-style: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
