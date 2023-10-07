@@ -1,0 +1,15 @@
+.dollar-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: var(--std-height);
+    /* background-color: var(--dp_1); */
+    border: var(--def-border);
+    border-radius: var(--radius-s);
+    padding: 12px;
+}
+
+.dollar-rate {
+    background-color: transparent;
+}

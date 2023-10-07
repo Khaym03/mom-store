@@ -7,11 +7,15 @@
 }
 
 :root {
-  --border-radius-md: 0.5rem;
   --dp_1: rgb(255 255 255 / 6%);
   --dp_2: rgb(255 255 255 / 8%);
   --dp_3: rgb(255 255 255 / 10%);
   --dp_4: rgb(255 255 255 / 12%);
+  --radius-sm: 0.25rem;
+  --radius-s: 0.5rem;
+  --def-border: 1px solid var(--dp_4);
+  --spacing: 1.5rem;
+  --std-height: 48px
 }
 
 body {
@@ -21,7 +25,7 @@ body {
 }
 
 #app {
-  padding: 0 0 0 88px;
+  padding: calc(var(--spacing)/2) 0 0 calc(88px + var(--spacing));
   min-height: 100vh;
   position: relative;
   color: #e1e3e3;
