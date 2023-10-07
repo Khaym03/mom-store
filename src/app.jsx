@@ -1,5 +1,8 @@
-import * as React from 'react'
+import React from 'react'
 import { createRoot } from 'react-dom/client'
+import NavBar from './NavBar'
 const root = createRoot(document.getElementById('app'))
 
-root.render(<h1>Is this working?</h1>)
+
+
+root.render(<NavBar />)

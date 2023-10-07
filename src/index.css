@@ -1,7 +1,25 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --border-radius-md: 0.5rem;
+  --dp_1: rgb(255 255 255 / 6%)
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+  min-height: 100vh;
+  position: relative;
+  color: #e1e3e3
 }
+
+ul {
+  list-style: none;
+}
+

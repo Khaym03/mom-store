@@ -25,8 +25,14 @@
  *  });
  * ```
  */
+import './css/colors.module.css'
+import './css/theme.css'
+import './css/theme.dark.css'
+import './css/tokens.css'
+import './css/typography.module.css'
+import './index.css'
+import './app.jsx'
 
-import './index.css';
-import './app.jsx';
-
-console.log('👋 This message is being logged by "renderer.js", included via Vite');
+console.log(
+  '👋 This message is being logged by "renderer.js", included via Vite'
+)
