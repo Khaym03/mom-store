@@ -90,3 +90,9 @@ typings/
 
 # Electron-Forge
 out/
+
+# API key
+apikey
+
+# Svgs folder
+svg-icons/
