@@ -11,7 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    backgroundColor: '#191c1d',
+    frame: false,
     titleBarStyle: 'hidden',
     titleBarOverlay: {
       color: '#191c1d',
@@ -22,7 +22,9 @@ const createWindow = () => {
       preload: path.join(__dirname, 'preload.js')
     }
   })
-  console.log(process.versions.electron)
+
+  mainWindow.setBackgroundColor('#191c1d')
+  mainWindow.removeMenu();
 
   // and load the index.html of the app.
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {

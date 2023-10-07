@@ -16,7 +16,7 @@ const UlElements = () => {
           <Icon  size='1.5rem'/>
         </span>
 
-        <span className="icon-name">{text}</span>
+        <span className="icon-name body-small">{text}</span>
       </a>
     </li>
   ))

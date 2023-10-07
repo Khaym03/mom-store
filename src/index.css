@@ -8,18 +8,25 @@
 
 :root {
   --border-radius-md: 0.5rem;
-  --dp_1: rgb(255 255 255 / 6%)
+  --dp_1: rgb(255 255 255 / 6%);
+  --dp_2: rgb(255 255 255 / 8%);
+  --dp_3: rgb(255 255 255 / 10%);
+  --dp_4: rgb(255 255 255 / 12%);
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif;
+ 
+}
+
+#app {
+  padding: 0 0 0 88px;
   min-height: 100vh;
   position: relative;
-  color: #e1e3e3
+  color: #e1e3e3;
 }
 
 ul {
   list-style: none;
 }
-

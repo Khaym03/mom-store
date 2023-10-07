@@ -1,8 +1,7 @@
 .nav-bar {
-    width: 10vw;
+    width: 88px;
     height: 100%;
     padding: 24px 4px;
-    max-width: 88px;
     position: absolute;
     top: 0;
     left: 0;
@@ -38,7 +37,7 @@
   }
 
   .nav-bar-ul-anchor .icon-wrapper:hover {
-    background-color: var(--dp_1);
+    background-color: var(--dp_2);
   } 
 
   .nav-bar-actions-list .icon-name {
