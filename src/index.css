@@ -15,7 +15,8 @@
   --radius-s: 0.5rem;
   --def-border: 1px solid var(--dp_4);
   --spacing: 24px;
-  --std-height: 48px
+  --std-height: 48px;
+  --hover: var(--dp_3);
 }
 
 body {

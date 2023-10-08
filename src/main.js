@@ -25,7 +25,7 @@ const createWindow = () => {
 
   mainWindow.setBackgroundColor('#191c1d')
   mainWindow.removeMenu();
-  mainWindow.setMinimumSize(1024, 624)
+  // mainWindow.setMinimumSize(1024, 624)
 
   // and load the index.html of the app.
   if (MAIN_WINDOW_VITE_DEV_SERVER_URL) {

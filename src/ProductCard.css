@@ -1,8 +1,8 @@
 .card-list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 280px);
-  grid-template-rows: repeat(3, 140px);
+  grid-template-columns: repeat(3, 220px);
+  grid-template-rows: repeat(3, 200px);
   gap: var(--spacing);
 }
 
@@ -11,31 +11,54 @@
   background-color: var(--md-ref-palette-neutral20);
   border: var(--def-border);
   padding: 8px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 8px;
 }
 
 .card-row-prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 8px;
-  height: 45%;
+  height: 100%;
+}
+
+.card-row-prices li:nth-child(1) {
+  border-radius: var(--radius-s) var(--radius-s) var(--radius-sm) var(--radius-sm);
+}
+
+.card-row-prices li:nth-child(3) {
+  border-radius: var(--radius-sm) var(--radius-sm) var(--radius-s) var(--radius-s);
 }
 
 .card-row-prices li {
   text-align: center;
   border-radius: var(--radius-sm);
   background-color: var(--dp_1);
+  transition: background-color 100ms ease-in;
+  cursor: pointer;
 }
 
-.card-title {
-  text-align: center;
-  height: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--dp_1);
+.card-row-prices li:hover {
+  background-color: var(--hover);
+}
+
+.card-header {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 8px;
   text-transform: capitalize;
-  border-radius: var(--radius-s) var(--radius-s) 0 0;
+}
+
+.card-icon-area {
+  border-radius: var(--radius-s) var(--radius-s) var(--radius-sm) var(--radius-sm);
+  border: 2px solid var(--dp_1);
+}
+
+.card-text-area {
+  text-align: center;
+  border-radius: var(--radius-sm) var(--radius-sm) var(--radius-s) var(--radius-s);
+  border: 2px solid var(--dp_1);
 }
